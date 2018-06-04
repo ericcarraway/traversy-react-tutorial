@@ -32,7 +32,13 @@ class App extends Component {
   }
 
   handleAddProject(project) {
-    console.log(project);
+    let projects = this.state.projects;
+
+    projects.push(project);
+
+    this.setState({
+      projects: projects
+    });
   }
 
   render() {
