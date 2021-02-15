@@ -1,0 +1,16 @@
+{
+    // https://www.npmjs.com/package/eslint-config-airbnb
+    // This package provides Airbnb's .eslintrc as an extensible shared config.
+    "extends": "airbnb",
+
+    "env": {
+    },
+
+    // custom overrides
+    "rules": {
+        "indent": ["error", 4],
+
+        // hoisted functions are OK
+        "no-use-before-define": ["error", { "functions": false }]
+    }
+}
